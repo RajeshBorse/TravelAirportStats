@@ -27,10 +27,11 @@ For Example :-
 
 Using this queries it will help us to build result set which we will be using to generate the reports and add them in our presentations. We are going to use the Mongo Charts to generate these reports which will give us a pictorial/graphical view of our data extracts.
 
-Thanks,
-Team - Group 22
 
-Contributers
+Thanks
+
+
+## Team - Group 22 (Contributers)
 * Al Janapy, Abeer S.J.
 * Al-Algawy, Yousif A.A.
 * Shaikh, Sana Atif
