@@ -1,71 +1,40 @@
 <link rel='stylesheet' href='web/swiss.css'/>
 
-# Mini project 1 sample
+# Statistical Analysis of Delayed Flights - United States
 
 This project is based on the project template of the worksheet for week 13 and it provides a couple of examples of acceptable queries for the mini project using the IMDB movie dataset used in the programming exercises:
 
-## Query 1
+## Briefly describe the application domain that you are going to analyse (e.g. motivation for using that topic, what the topic is about, and main concepts involved)
 
-This is a simple query, aiming to a satisfactory mark.
+The motivation for selecting this topic, is the dataset using which we can explore the possibilities and functionalities which MongoDB and Groovy offers us. 
 
-  * Query: Select movies with more than a 9 rating and project title and year. Then the resulting movies are sorted by year, in ascending order. 
-  * Groovy implementation: `src/main/groovy/Query_Groovy_simple.groovy`
-  * MongoDB implementation: `src/main/groovy/Query_MongoDB_simple.groovy`
+On the technical stack we intend to us MongoDB, Groovy, Gradle and GitHub for the mini-project deliverables. As MongoDB Atlas is a secure multi-cloud service, being it also provides as with its enhanced features as we can scale horizontally, consistency on the data part and its easy to maintain. It is designed to increase developers productivity reason being we can upload our dataset's.
 
-## Query 2
-
-This is a more compelling query exercising more features of both Groovy and MongoDB and it should therefore lead to a better mark.
-
-  * Query: Select actors that star more than 1 movie with at least a 9 imdb rating.
-  * Groovy implementation: `src/main/groovy/Query_Groovy_compelling.groovy`
-  * MongoDB implementation: `src/main/groovy/Query_Groovy_compelling.groovy`
+We will be uploading the selected dataset using Groovy based project and use the MongoDB drivers to upload the dataset. We are planing to extract queries in the possible ways and make use of the entire dataset to pull valuable information, moreover we are also ensuring that we keep the performance of the queries to the mark, which helps us for having high availability of our data.
 
 
-## Ideas for the analysis in exercise 4
+## Briefly describe the query that you are going to implement
 
-In addition to the rubric you may want to use some of the questions below to discuss exercise 4. This is just a sample of questions, which is not supposed to be prescriptive. Feel free to choose and expand according to your interests.
+Here after the discussion with the team and analysis of the complete dataset, we have observed that the dataset has several attributes using which we can extract some meaningful information using Groovy and MongoDB API's.
 
-### Evolution
+For Example :- 
 
-* Which implementation is more understandable? Why?
-* Which implementation is likely to be more maintainable? Why?
-* When importing movies from other datasets:
-  * What is the impact of a change of data structure in the query evaluation?
-  * Would you need to develop a new database? Would you need to migrate data to the new version? Why? How?
-  * Are there any implications regarding forward/backward compatibility?
+1) Total number of flights which were delayed between year 2013 to 2016.
+2) Airports with most number of delayed carrier flights.
+3) Identify the most and the least number of flight delays Airport wise.
+4) Statistical data extract for factors affecting the delays i.e. (Carrier, Late Aircraft, National Aviation System, Security and Weather)
+5) Airport having most success ratio and flights that were arrived on time.
 
-### Scalability
-
-* Which implementation is faster? Have you measured it? How?
-* Which implementation can be scaled? How? 
-* Which implementation cannot be scaled? Why not?
-
-Here the point is to do some research on the support that MongoDb offers for managing clusters.
-
-### Consistency
-
-* If you have different applications modifying the same dataset (stored as a JSON file or in the MongoDB database), how would you ensure that there are no write-write conflicts? Here the point is to discuss how concurrency can be handled in Groovy and in MongoDB.
-* If the dataset is replicated, how would you ensure that there are no write-write conflicts? and write-read conflicts? Here the point is to do some research on the support that MongoDb offers for managing clusters, including the notion of write concern.
+Using this queries it will help us to build result set which we will be using to generate the reports and add them in our presentations. We are going to use the Mongo Charts to generate these reports which will give us a pictorial/graphical view of our data extracts.
 
 
-## Changing the name of the project
-
-Go to `build.gradle` and change the name in `eclipse.project.name` as shown in the code snipped below (`...` refers to additional code that has been removed for the sake of presentation):
-
-```
-...
-eclipse {
-	project {
-		name 'week14_miniproject1_sample'
-		...
-	}
-}
-...
-```
+Thanks
 
 
-
-
-
-***
-&copy; Artur Boronat, 2015-20
+## Team - Group 22 (Contributers)
+* Al Janapy, Abeer S.J.
+* Al-Algawy, Yousif A.A.
+* Shaikh, Sana Atif
+* Sadanala, Yogeswari
+* Kadir Abdallah, Fathi
+* Borse, Rajesh S
