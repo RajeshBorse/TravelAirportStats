@@ -1,12 +1,15 @@
 <link rel='stylesheet' href='web/swiss.css'/>
 
-# Statistical Analysis of Delayed Flights - United States
+# Analysis of Delayed Flights - United States
 
 This project is based on the project template of the worksheet for week 13 and it provides a couple of examples of acceptable queries for the mini project using the IMDB movie dataset used in the programming exercises:
 
 ## Briefly describe the application domain that you are going to analyse (e.g. motivation for using that topic, what the topic is about, and main concepts involved)
 
-The motivation for selecting this topic, is the dataset using which we can explore the possibilities and functionalities which MongoDB and Groovy offers us. 
+The motivation for selecting this topic i.e. Monthly Airline Delays by Airport, 2003-2016
+is that using the provided dataset we can do the in-depth analysis of the past performances of the Airports and the Carrier flights monthly and yearly from year 2003/01 till 2016/06.
+
+Nobody wants to spend their time on Airports and have any-kinds of delay during their journeys. We will be able to use this analysis data and statistics to improve the overall services for customer to enable them making their right choices of their destination or transit Airports and Carriers and also give them the background about the factors causing the delays from our past surveys.
 
 On the technical stack we intend to us MongoDB, Groovy, Gradle and GitHub for the mini-project deliverables. As MongoDB Atlas is a secure multi-cloud service, being it also provides as with its enhanced features as we can scale horizontally, consistency on the data part and its easy to maintain. It is designed to increase developers productivity reason being we can upload our dataset's.
 
