@@ -33,3 +33,48 @@ for(item in resultList) {
 		+ "In Year/Month of : " + item.Time.Label  + "\t"
 		+ "Number of Flights Delayed : " + item.Statistics.Flights.Delayed)
 }
+
+
+/*def projection = {
+	[
+		timeLabel: it.Time.Label,
+		statsTotalDelayed : it.Statistics.Flights.Delayed,
+		statsCarrierDelayed : it.Statistics.NumberOfDelays.Carrier,
+		statsLateAircraftDelayed : it.Statistics.NumberOfDelays.LateAircraft,
+		statsNationalAviationSystemDelayed : it.Statistics.NumberOfDelays.NationalAviationSystem,
+		statsSecurityDelayed : it.Statistics.NumberOfDelays.Security,
+		statsWeatherDelayed : it.Statistics.NumberOfDelays.Weather,
+	]
+}
+*/
+
+//def resultList = myCollection.
+
+// selects movies using filter and applies projection
+/*def selectedMovies = movieList
+		.findAll{it.imdbRating >= 9}
+		.collect{projection(it)}*/
+		
+		
+//def selectedDelayedOutput	
+
+
+/**
+ * Example of query that requires using MongoDb Java Driver in more depth.
+ *
+ * Select actors that star more than 1 movie with at least a 9 imdb rating
+ */
+/*def resultList = col.aggregate([
+	match(gte('imdbRating',9)),
+	project(fields(include('title', 'year', 'actors', 'imdbRating'),excludeId())),
+	unwind('$actors'),
+	group('$actors', sum('count', 1L)),
+	match(gt('count',1))
+])
+*/
+println()
+println()
+resultList.each { println(it) }
+println()
+println()
+
