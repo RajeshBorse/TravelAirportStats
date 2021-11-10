@@ -23,6 +23,7 @@ repositories {
 dependencies {
 	compileOnly 'org.codehaus.groovy:groovy-all:3.0.5'
 	compileOnly 'org.mongodb:mongodb-driver-sync:4.1.0'
+	implementation 'ch.qos.logback:logback-classic:1.2.3'
 	implementation( files ('submission_helper/submission_helper_part1-0.0.1-SNAPSHOT.jar'))
 }
 
