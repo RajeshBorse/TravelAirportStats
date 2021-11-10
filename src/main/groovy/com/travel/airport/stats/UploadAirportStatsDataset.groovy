@@ -2,7 +2,6 @@ package com.travel.airport.stats
 
 import org.bson.Document
 import com.mongodb.client.MongoClients
-import static com.mongodb.client.model.Filters.*;
 import groovy.json.JsonOutput
 import groovy.json.JsonSlurper
 
