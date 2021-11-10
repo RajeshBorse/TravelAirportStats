@@ -18,10 +18,10 @@ propertiesFile.withInputStream {
 // Creating the MongoDB Connection to Fetch the contents
 def mongoClient = MongoClients.create("mongodb+srv://${properties.USN}:${properties.PWD}@${properties.CLUSTER}.${properties.HOST}.mongodb.net/${properties.DB}?retryWrites=true&w=majority");
 def dbInstance = mongoClient.getDatabase(properties.DB);
-def myCollection = dbInstance.getCollection("travel-airport-stats")
+def myCollection = dbInstance.getCollection("new-travel-airport-stats")
 
 // Selecting all the values form the MongoDB collection "travel-airport-stats"
-def resultList = myCollection.find().sort(ascending('Airport.Code')).toList()
+def resultList = myCollection.find()
 
 for(item in resultList) {
 	println(JsonOutput.prettyPrint(JsonOutput.toJson(item)))
